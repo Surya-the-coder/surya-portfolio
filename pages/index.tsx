@@ -14,7 +14,7 @@ const IndexPage = () => {
   return (
     <div className={LightMode ? 'flex flex-col w-full min-h-screen bg-white' : 'flex flex-col w-full min-h-screen bg-black'}>
       <NavBar LightMode = {LightMode} setLightMode = {setLightMode} />
-      <div className='flex pl-96 ml-52 pr-[8rem] pt-[23rem] absolute z-30'>
+      <div className='flex pl-96 ml-52 pr-32 pt-96 absolute z-30'>
         <p className={`flex justify-center text-4xl w-full ${LightMode ? 'text-gray-500' : 'text-gray-400'}`}>
         Software Developer with over 3 years of experience in development of software products and good at problem-solving and software design. A personable individual who is also dynamic and adept at a variety of programing languages and frameworks. Always looking to decipher problems to arrive at a simple yet scalable solutions.
         </p>
