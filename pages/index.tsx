@@ -1,16 +1,22 @@
-import Link from 'next/link'
-import { useState } from 'react';
-import Layout from '../components/Layout'
-
-import BellIcon from '../assets/svg/Bell.svg';
-import Abstract1 from '../assets/svg/Abstract1.svg';
-import Abstract2 from '../assets/svg/Abstract2.svg';
-import Abstract3 from '../assets/svg/Abstract3.svg';
+import { useRouter } from 'next/router';
 import NavBar from '../components/NavBar';
+import { useEffect, useState } from 'react';
 
 
 const IndexPage = () => {
+  const router = useRouter();
   const [LightMode, setLightMode] = useState(false);
+  
+  useEffect(() => {
+      let LocalLightMode = localStorage.getItem('LightMode')
+      if (LocalLightMode == "TRUE") {
+          setLightMode(true)
+      }
+      else{
+          setLightMode(false)
+      }
+  }, [])
+
   return (
     <div className={LightMode ? 'flex flex-col w-full min-h-screen bg-white' : 'flex flex-col w-full min-h-screen bg-black'}>
       <NavBar LightMode = {LightMode} setLightMode = {setLightMode} />
