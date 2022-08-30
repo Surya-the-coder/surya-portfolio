@@ -28,6 +28,7 @@ const experience = () => {
     return (
         <div className={LightMode ? 'flex flex-col w-full min-h-screen bg-white' : 'flex flex-col w-full min-h-screen bg-black'}>
         <NavBar LightMode = {LightMode} setLightMode = {setLightMode} />
+        
         <div className=' flex flex-col pt-96 pl-48 relative z-0'>
             <div className='flex justify-left'>
             <p className={` flex justify-center text-8xl mx-20 py-5 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 `}>
