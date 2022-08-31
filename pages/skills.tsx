@@ -8,7 +8,6 @@ import Abstract2 from '../assets/svg/Abstract2.svg';
 import Abstract3 from '../assets/svg/Abstract3.svg';
 import NavBar from '../components/NavBar';
 import { useRouter } from 'next/router';
-import SmallNavBar from '../components/SmallNavBar';
 
 
 const skills = () => {
@@ -38,7 +37,7 @@ const skills = () => {
         </div>
         
         {/* small nav */}
-        <SmallNavBar/>
+        {/* <SmallNavBar/> */}
         
         </div>
     )
