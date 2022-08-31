@@ -30,13 +30,16 @@ const IndexPage = () => {
         Software Developer with over 3 years of experience in development of software products and good at problem-solving and software design. A personable individual who is also dynamic and adept at a variety of programing languages and frameworks. Always looking to decipher problems to arrive at a simple yet scalable solutions.
         </p>
       </div>
-      {LightMode?<>
-      <motion.div className=' flex absolute -top-24 -left-32 rounded-full filter blur-3xl'initial={{scale:1, translate:0}} animate={{translateY:300, translateX:200, scale:1.2}} transition={{duration:7, repeat:Infinity, repeatType:'reverse'}}>
-        <Abstract1/>
-      </motion.div>
-      <motion.div className='flex absolute top-72  right-36 rounded-full filter blur-3xl' initial={{translateX:-20, translateY:-15, scale:0.9}} animate={{translateX:-1, translateY:-300, scale:1.2}} transition={{duration:7, repeat:Infinity, repeatType: "reverse", ease:'easeInOut' }}>
-        <Abstract2/>
-      </motion.div></>:null}
+      {LightMode?
+        <>
+          <motion.div className=' flex absolute -top-24 -left-32 rounded-full filter blur-3xl'initial={{scale:1, translate:0}} animate={{translateY:300, translateX:200, scale:1.2}} transition={{duration:7, repeat:Infinity, repeatType:'reverse'}}>
+            <Abstract1/>
+          </motion.div>
+          <motion.div className='flex absolute top-72  right-36 rounded-full filter blur-3xl' initial={{translateX:-20, translateY:-15, scale:0.9}} animate={{translateX:-1, translateY:-300, scale:1.2}} transition={{duration:7, repeat:Infinity, repeatType: "reverse", ease:'easeInOut' }}>
+            <Abstract2/>
+          </motion.div>
+        </>
+      :null}
       <div className='flex absolute z-0 -left-32'>
         {/* <Abstract3/> */}
       </div>
