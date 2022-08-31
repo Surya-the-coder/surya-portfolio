@@ -16,8 +16,8 @@ const NavBar = (props) => {
     }
 
     return (
-        <div className="flex w-full absolute z-50">
-            <nav className="flex justify-end w-full">
+        <div className="flex justify-end w-full relative z-50">
+            <nav className="flex w-full">
                 <ul className="flex items-center">
                     <li className={`mx-10 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1`}>
                         <Link href = {{pathname : "/"}}>//about</Link>
