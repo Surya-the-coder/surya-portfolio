@@ -54,7 +54,7 @@ const IndexPage = () => {
         </ul>
         <p className={`flex flex-wrap-reverse justify-start bottom-10 my-1 text-base w-full  ${LightMode ? 'text-gray-500' : 'text-gray-400'}`}>
           &gt;&gt; Three years of Software Design/Dev.<br/>
-          &gt;&gt; A good at problem-solver.<br/>
+          &gt;&gt; A good problem-solver.<br/>
           &gt;&gt; A personable yet dynamic individual<br/>
           &gt;&gt; Approach a complex problem to solve in a simple yet scallable manner.
         </p>

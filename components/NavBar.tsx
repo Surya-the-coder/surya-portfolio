@@ -21,7 +21,7 @@ const NavBar = (props) => {
 
     return (
         <div className="flex w-full xl:relative xl:z-50 xs:z-50 xs:absolute md:px-10">
-            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+            {/* <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> */}
             <nav className="flex w-full justify-end">
                 <ul className="flex items-center ">
                     <li className={`md:mx-10 xs:mx-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1 xs:text-xs xs:flex xs:items-center`}>
