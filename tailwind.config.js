@@ -11,6 +11,9 @@ module.exports = {
         'xs' : {'max' : '768px'},
         'md-max' : {'max' : '1023px'},
         'lg-max' : {'max' : '1279px'},
+      },
+      backgroundColor:{
+        'dark' : '#242424'
       }
     },
   },

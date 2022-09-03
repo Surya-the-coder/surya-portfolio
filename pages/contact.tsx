@@ -31,7 +31,7 @@ const contact = () => {
             <NavBar LightMode = {LightMode} setLightMode = {setLightMode} />
         </div>
 
-        <div className=' flex w-full md:py-20 xs:py-20 xs:mt-20'>
+        <div className=' flex w-full md:py-20 xs:pt-20 xs:mt-0'>
             <div className='flex flex-col w-full justify-center items-center xs:mx-10 md-max:mx-10 lg:mx-32 py-20 shadow-black shadow-2xl rounded-2xl'>
                 <p className={` flex text-4xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 `}>
                     Mail Me

@@ -24,7 +24,7 @@ const IndexPage = () => {
   }, [])
 
   return (
-    <div className={LightMode ? 'flex flex-col w-full min-h-screen bg-white' : 'flex flex-col w-full min-h-screen bg-[#242424]'}>
+    <div className={LightMode ? 'flex flex-col w-full min-h-screen bg-white' : 'flex flex-col w-full min-h-screen bg-dark'}>
       <NavBar LightMode = {LightMode} setLightMode = {setLightMode} />
       {/* <div className='flex backdrop-blur-lg relative z-0 w-full'> */}
         {/* Surya Sundararajan */}
