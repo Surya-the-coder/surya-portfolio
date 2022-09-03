@@ -73,7 +73,7 @@ const IndexPage = () => {
         </div>
       :null}
       {LightMode?
-        <div className='xs:hidden lg:hidden xl:hidden'>
+        <div className='xs:hidden xs:cursor-not-allowed lg:hidden xl:hidden'>
           <motion.div className=' flex absolute -top-24 -left-32 rounded-full filter blur-3xl'initial={{scale:1, translate:0}} animate={{translateY:300, translateX:200, scale:1.2}} transition={{duration:7, repeat:Infinity, repeatType:'reverse'}}>
             <Abstract1/>
           </motion.div>

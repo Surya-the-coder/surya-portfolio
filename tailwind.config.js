@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [ 
@@ -8,11 +10,14 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'xs' : {'max' : '768px'},
+        'xs' : {'max' : '765px'},
         'md-max' : {'max' : '1023px'},
         'lg-max' : {'max' : '1279px'},
       },
       backgroundColor:{
+        'dark' : '#242424'
+      },
+      textColor:{
         'dark' : '#242424'
       }
     },
