@@ -36,7 +36,7 @@ const NavBar = (props) => {
                         <Link href = {{pathname : "/contact"}} >//contact</Link>
                     </li>
                     <li>
-                        <motion.button className={`flex items-center justify-center md:w-20 md:h-20 xs:w-12 xs:h-12 xs:-mr-5`} onClick={setLocalLightMode} whileTap={{rotate:360, transition:{duration:0.3}}}>
+                        <motion.button className={`flex items-center justify-center md:w-20 md:h-20 xs:w-12 xs:h-12 xs:-mr-0`} onClick={setLocalLightMode} whileTap={{rotate:360, transition:{duration:0.3}}}>
                             {props.LightMode?<Dark className={`pl-2 pt-2`}/>:<Light/>}
                         </motion.button>
                     </li>

@@ -26,7 +26,7 @@ const experience = () => {
     
 
     return (
-        <div className={LightMode ? 'flex flex-col w-full min-h-screen bg-white' : 'flex flex-col w-full min-h-screen bg-black'}>
+        <div className={LightMode ? 'flex flex-col w-full min-h-screen bg-white' : 'flex flex-col w-full min-h-screen bg-[#242424]'}>
         <NavBar LightMode = {LightMode} setLightMode = {setLightMode} />
         
         <div className=' flex flex-col md:pt-96 md:pl-48 relative md:z-0 xs:mt-20'>
