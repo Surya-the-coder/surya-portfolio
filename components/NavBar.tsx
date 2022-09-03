@@ -23,20 +23,20 @@ const NavBar = (props) => {
             <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
             <nav className="flex w-full justify-end">
                 <ul className="flex items-center ">
-                    <li className={`md:mx-10 xs:mx-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1 xs:text-sm xs:flex xs:items-center`}>
+                    <li className={`md:mx-10 xs:mx-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1 xs:text-xs xs:flex xs:items-center`}>
                         <Link href = {{pathname : "/"}}>//about</Link>
                     </li>
-                    <li className={`md:mx-10 xs:mx-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1 xs:text-sm xs:flex xs:items-center`}>
+                    <li className={`md:mx-10 xs:mx-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1 xs:text-xs xs:flex xs:items-center`}>
                         <Link href = {{pathname : "/experience"}} >//experience</Link>
                     </li>
-                    <li className={`md:mx-10 xs:mx-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1 xs:text-sm xs:flex xs:items-center`}>
+                    <li className={`md:mx-10 xs:mx-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1 xs:text-xs xs:flex xs:items-center`}>
                         <Link href = {{pathname : "/skills"}} >//skills</Link>
                     </li>
-                    <li className={`md:mx-10 xs:mx-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1 xs:text-sm xs:flex xs:items-center`}>
+                    <li className={`md:mx-10 xs:mx-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 underline-offset-1 xs:text-xs xs:flex xs:items-center`}>
                         <Link href = {{pathname : "/contact"}} >//contact</Link>
                     </li>
-                    <li>
-                        <motion.button className={`flex items-center justify-center md:w-20 md:h-20 xs:w-12 xs:h-12 xs:-mr-0`} onClick={setLocalLightMode} whileTap={{rotate:360, transition:{duration:0.3}}}>
+                    <li className={`xs:mr-2 xs:text-xs`}>
+                        <motion.button className={`flex items-center justify-center md:w-20 md:h-20`} onClick={setLocalLightMode} whileTap={{rotate:360, transition:{duration:0.3}}}>
                             {props.LightMode?<Dark className={`pl-2 pt-2`}/>:<Light/>}
                         </motion.button>
                     </li>

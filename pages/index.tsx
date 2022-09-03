@@ -24,16 +24,16 @@ const IndexPage = () => {
   }, [])
 
   return (
-    <div className={LightMode ? 'flex flex-col w-full min-h-screen bg-blue-200' : 'flex flex-col w-full min-h-screen bg-[#242424]'}>
+    <div className={LightMode ? 'flex flex-col w-full min-h-screen bg-white' : 'flex flex-col w-full min-h-screen bg-[#242424]'}>
       <NavBar LightMode = {LightMode} setLightMode = {setLightMode} />
       {/* <div className='flex backdrop-blur-lg relative z-0 w-full'> */}
         {/* Surya Sundararajan */}
         <div className='flex flex-col justify-start xl:mt-96 xl:ml-56 xl:relative xl:z-50 max-w-xl md:px-5 md:mx-5 md:my-20 md:py-0 xs:mx-5 xs:mt-14'>
           <div className='flex justify-start '>
-            <p className={'flex justify-center xl:text-8xl md:text-6xl xs:text-6xl pb-5 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'}> Surya </p>
+            <p className={'flex justify-center xl:text-8xl md:text-6xl xs:text-4xl pb-5 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'}> Surya </p>
           </div>
           <div className='flex justify-start '>
-            <p className={'flex justify-center xl:text-8xl md:text-6xl xs:text-6xl pb-5 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'}> Sundararajan </p>
+            <p className={'flex justify-center xl:text-8xl md:text-6xl xs:text-4xl pb-5 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'}> Sundararajan </p>
           </div>
         </div>
 
@@ -42,7 +42,7 @@ const IndexPage = () => {
 
         {/* Summary */}
         <div className='flex flex-wrap-reverse justify-start xl:ml-96 xl:pl-32 xl:mr-32 xl:mt-96 xl:max-h-52 xl:absolute xl:z-50 md:px-5 md:mx-5 md:my-0 xs:mx-5 xs:hidden'>
-          <p className={`flex flex-wrap-reverse justify-center bottom-10 my-1 text-4xl w-full  ${LightMode ? 'text-gray-500' : 'text-gray-400'}`}>
+          <p className={`flex flex-wrap-reverse justify-center bottom-10 my-1 sm:text-4xl xs:text-2xl w-full  ${LightMode ? 'text-gray-500' : 'text-gray-400'}`}>
           Software Developer with over 3 years of experience in development of software products and good at problem-solving and software design. A personable individual who is also dynamic and adept at a variety of programing languages and frameworks. Always looking to decipher problems to arrive at a simple yet scalable solutions.
           </p>
         </div>
